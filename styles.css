@@ -1,58 +1,65 @@
-@import url('https://use.typekit.net/utq3vtj.css'); /* News Gothic */
-@import url("https://use.typekit.net/utq3vtj.css"); /* Minion */
-@import url("https://use.typekit.net/utq3vtj.css"); /* Acumin */
+@import url('https://use.typekit.net/utq3vtj.css'); /* News Gothic, Minion, Acumin */
+
+/* ----------------------------- GLOBAL STYLES ----------------------------- */
 
 :root {
-  --primary-font: 'news-gothic-std', sans-serif;
-  --secondary-font: 'minion-pro', serif;
-  --tertiary-font: 'acumin-pro', sans-serif;
+  --font-headline: 'news-gothic-std', sans-serif;
+  --font-accent: 'minion-pro', serif;
+  --font-body: 'acumin-pro', sans-serif;
   --brand-blue: #006EB6;
+  --brand-grey: #949598;
+}
+
+* { 
+  box-sizing: border-box; 
 }
 
 body {
-  font-family: var(--primary-font);
+  font-family: var(--font-headline);
+  margin: 0;
 }
+
+/* ----------------------------- NAVIGATION ----------------------------- */
 
 nav a {
-  font-family: var(--tertiary-font);
-
+  font-family: var(--font-body);
   text-decoration: none;
   color: black;
-  margin-right: 10px; /* space between links */
+  margin-right: 10px;
 }
 
-nav a::after {
-  content: "|";              /* adds a separator */
-  margin-left: 10px;         /* space after separator */
-  color: gray;
+nav a:not(:last-child)::after {
+  content: "|";
+  margin: 0 10px;
+  color: var(--brand-grey);
 }
 
-/* removes the last "|" */
-nav a:last-child::after {
-  content: "";
+#menu {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  font-size: 1rem;
 }
+
+/* ----------------------------- HERO IMAGE & WELCOME TEXT ----------------------------- */
 
 .hero-image {
   position: relative;
   width: 100%;
-  height: 500px; /* adjust as needed */
+  height: 500px;
   overflow: hidden;
 }
 
 .hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* keeps the image proportionate */
+  object-fit: cover;
   display: block;
 }
 
 /* Blue hue overlay */
 .hero-image .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background-color: rgba(2, 41, 67, 0.44); /* your blue with 44% transparency */
   z-index: 1;
 }
@@ -62,30 +69,31 @@ nav a:last-child::after {
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
-  font-family: var(--primary-font);
+  font-family: var(--font-headline);
   color: white;
-  font-size: 50px;       /* matches Figma size */
-  font-weight: 700;      /* bold */
+  font-size: 3rem;
+  font-weight: 700;
   text-align: left;
   z-index: 2;
-  max-width: 60%;        /* adjust to fit 2 lines */
-  line-height: 1.4;      /* increased spacing between lines */
+  max-width: 60%;
+  line-height: 1.4;
 }
 
+/* ----------------------------- MAIN CONTENT ----------------------------- */
 
 .content {
   text-align: left;         
   max-width: 600px;         /* optional: control overall block width */
   margin: 0 auto;           
-  padding: 40px 20px;
-  font-size: 24px;
-  font-weight: 300px;
+  padding: 2.5rem 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .about-page {
   font-weight: 700;         
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   line-height: 1.4;
 }
 
@@ -95,4 +103,8 @@ nav a:last-child::after {
   line-height: 1.4;
 }
 
-
+#blank {
+  background-color: var(--brand-blue);
+  width: 100%;
+  height: 30px;
+}

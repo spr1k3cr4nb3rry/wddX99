@@ -1,12 +1,22 @@
+@import url('https://use.typekit.net/utq3vtj.css'); /* News Gothic */
+@import url("https://use.typekit.net/utq3vtj.css"); /* Minion */
+@import url("https://use.typekit.net/utq3vtj.css"); /* Acumin */
 
-/* Apply Poppins to the entire page */
-body {
-  font-family: 'Poppins', sans-serif;
+:root {
+  --primary-font: 'news-gothic-std', sans-serif;
+  --secondary-font: 'minion-pro', serif;
+  --tertiary-font: 'acumin-pro', sans-serif;
+  --brand-blue: #006EB6;
 }
 
+body {
+  font-family: var(--primary-font);
+}
 
 nav a {
-text-decoration: none;
+  font-family: var(--tertiary-font);
+
+  text-decoration: none;
   color: black;
   margin-right: 10px; /* space between links */
 }
@@ -52,6 +62,7 @@ nav a:last-child::after {
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
+  font-family: var(--primary-font);
   color: white;
   font-size: 50px;       /* matches Figma size */
   font-weight: 700;      /* bold */

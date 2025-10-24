@@ -26,6 +26,13 @@ body {
   height: 30px;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;  /* links left, buttons right */
+  align-items: center;
+  margin: 20px;                   /* space around nav */
+}
+
 nav a {
   font-family: var(--font-body);
   text-decoration: none;
@@ -106,4 +113,76 @@ nav a:not(:last-child)::after {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.4;
+}
+
+/* ----------------------------- Nav Buttons----------------------------- */
+
+/* Buttons on the right */
+.nav-buttons {
+  display: flex;
+  gap: 10px;          /* space between buttons */
+}
+
+/* Shared button styles */
+.nav-buttons button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+}
+
+/* Login button */
+.login-btn {
+  border: 2px solid #006EB6;
+  background-color: transparent;
+  color: #022943;
+}
+
+.join-btn {
+  background-color: #022943;   /* BYU-Idaho blue */
+  color: white;
+  border: none;
+  padding: 8px 20px;           /* width > height makes it rectangular */
+  border-radius: 6px;          /* small rounding for softer corners */
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.join-btn:hover {
+  background-color: #004a9f;   /* slightly darker blue on hover */
+}
+
+
+/* Search button as icon */
+.search-btn {
+  border: 2px solid #022943;    /* border only */
+  background-color: transparent;
+  color: #022943;
+  border-radius: 50%;            /* circular button */
+  width: 60px;                   /* fixed size */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;                    
+}
+
+.search-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+
+.divider {
+  width: 90%;              
+  max-width: 1200px;        
+  height: 2px;
+  background-color: #022943; 
+  margin: 40px auto;       
+  border-radius: 1px;      
 }

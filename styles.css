@@ -30,7 +30,7 @@ nav {
   display: flex;
   justify-content: space-between;  /* links left, buttons right */
   align-items: center;
-  margin: 20px;                   /* space around nav */
+  margin: 1rem;                   /* space around nav */
 }
 
 nav a {
@@ -47,7 +47,7 @@ nav a:not(:last-child)::after {
 }
 
 #menu {
-  padding: 1rem 1.25rem;
+  padding: 0;
   text-align: left;
   font-size: 1rem;
 }
@@ -126,22 +126,21 @@ nav a:not(:last-child)::after {
 /* Shared button styles */
 .nav-buttons button {
   padding: 8px 16px;
-  border-radius: 8px;
+  border-radius: 20px;
   cursor: pointer;
   font-weight: 500;
   font-size: 14px;
-  border: none;
 }
 
 /* Login button */
 .login-btn {
-  border: 2px solid #006EB6;
+  border: 2px solid var(--brand-blue);
   background-color: transparent;
-  color: #022943;
+  color: var(--brand-blue);
 }
 
 .join-btn {
-  background-color: #022943;   /* BYU-Idaho blue */
+  background-color: var(--brand-blue);   /* BYU-Idaho blue */
   color: white;
   border: none;
   padding: 8px 20px;           /* width > height makes it rectangular */
@@ -153,7 +152,7 @@ nav a:not(:last-child)::after {
 }
 
 .join-btn:hover {
-  background-color: #004a9f;   /* slightly darker blue on hover */
+  background-color: #1764AA;   /* slightly darker blue on hover */
 }
 
 
@@ -185,4 +184,66 @@ nav a:not(:last-child)::after {
   background-color: #022943; 
   margin: 40px auto;       
   border-radius: 1px;      
+}
+
+/* ----------------------------- TOPICS SECTION ----------------------------- */
+.topics-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  font-family: var(--font-body);
+  color: black;
+}
+
+.topics-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+}
+
+.topic-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.topic-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-topic-card {
+  grid-row: span 2;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.topic-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.topic-content p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.topic-content a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.topic h4 {
+  font-size: 1rem;
+  padding: 1rem;
+  border-top: 1px solid #eee;
 }

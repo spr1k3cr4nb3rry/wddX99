@@ -1,0 +1,69 @@
+.trending-topics {
+  padding: 4rem 2rem;
+  background-color: #f9fafb;
+}
+
+.topics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 1.5rem;
+}
+
+/* Grid positioning for cards */
+.topic-card-featured {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+/* First non-featured card (2nd overall) */
+.topic-card:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* Second non-featured card (3rd overall) */
+.topic-card:nth-child(3) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+/* Third non-featured card (4th overall) */
+.topic-card:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* Fourth non-featured card (5th overall) */
+.topic-card:nth-child(5) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+@media (max-width: 968px) {
+  .topics-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  
+  .topic-card-featured {
+    grid-row: span 1;
+  }
+  
+  .topic-card-featured .topic-image-wrapper {
+    height: 250px;
+  }
+}
+

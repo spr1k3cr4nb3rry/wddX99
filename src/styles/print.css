@@ -1,0 +1,177 @@
+/* Print styles for topics */
+
+@media print {
+  /* Hide navigation and non-essential elements */
+  .header,
+  .footer,
+  .topic-sidebar,
+  .back-button,
+  .vote-button,
+  .topic-stats-bar,
+  .export-menu-container,
+  .share-buttons,
+  .comments-section,
+  .reading-progress {
+    display: none !important;
+  }
+
+  /* Page setup */
+  @page {
+    margin: 2cm;
+    size: A4;
+  }
+
+  /* Typography */
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #000;
+    background: white;
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    color: #000;
+  }
+
+  h1 {
+    font-size: 24pt;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 18pt;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h3 {
+    font-size: 14pt;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Sections */
+  section {
+    page-break-inside: avoid;
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    page-break-inside: avoid;
+  }
+
+  /* Links */
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    color: #666;
+  }
+
+  /* Lists */
+  ul, ol {
+    margin-left: 1.5rem;
+  }
+
+  /* Tables */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    page-break-inside: avoid;
+  }
+
+  table th,
+  table td {
+    border: 1px solid #000;
+    padding: 0.5rem;
+  }
+
+  /* Code blocks */
+  pre, code {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    page-break-inside: avoid;
+  }
+
+  /* Page breaks */
+  .page-break {
+    page-break-before: always;
+  }
+
+  /* Avoid breaking inside */
+  p, li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Article layout */
+  .topic-detail-container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .topic-layout {
+    display: block;
+  }
+
+  .topic-content {
+    width: 100%;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  /* Abstract */
+  .article-abstract {
+    border-left: 4px solid #000;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+
+  /* References */
+  .references-section {
+    page-break-before: always;
+    margin-top: 2rem;
+  }
+
+  .references-list {
+    list-style: decimal;
+    padding-left: 2rem;
+  }
+
+  /* Author bio */
+  .author-bio-section {
+    page-break-before: always;
+    margin-top: 2rem;
+    border-top: 2px solid #000;
+    padding-top: 1rem;
+  }
+
+  /* Visualizations - try to keep together */
+  .visualization-container {
+    page-break-inside: avoid;
+  }
+
+  /* Footer info */
+  .print-footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+    font-size: 10pt;
+    color: #666;
+  }
+}
+
+
+

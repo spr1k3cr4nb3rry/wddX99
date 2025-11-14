@@ -1,0 +1,357 @@
+.chart-builder {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.chart-builder:hover {
+  border-color: #006EB6;
+  box-shadow: 0 4px 12px rgba(0, 110, 182, 0.1);
+}
+
+.chart-builder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.chart-builder-title-group {
+  display: flex;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 300px;
+}
+
+.chart-title-input {
+  flex: 1;
+  padding: 0.875rem 1.125rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.chart-title-input:hover {
+  border-color: #9ca3af;
+}
+
+.chart-title-input:focus {
+  outline: none;
+  border-color: #006EB6;
+  box-shadow: 0 0 0 4px rgba(0, 110, 182, 0.1);
+  background-color: #fafbfc;
+}
+
+.chart-type-select {
+  padding: 0.875rem 1.125rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.chart-type-select:hover {
+  border-color: #9ca3af;
+}
+
+.chart-type-select:focus {
+  outline: none;
+  border-color: #006EB6;
+  box-shadow: 0 0 0 4px rgba(0, 110, 182, 0.1);
+}
+
+.chart-builder-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-templates,
+.btn-remove-chart {
+  padding: 0.625rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  background: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  letter-spacing: 0.01em;
+}
+
+.btn-templates:hover {
+  background: #f0f9ff;
+  border-color: #006EB6;
+  color: #006EB6;
+}
+
+.btn-remove-chart:hover {
+  background: #fef2f2;
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+.chart-templates {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.chart-templates h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.templates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.75rem;
+}
+
+.template-card {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.template-card:hover {
+  border-color: #006EB6;
+  background: #eff6ff;
+  transform: translateY(-2px);
+}
+
+.template-card strong {
+  font-size: 0.875rem;
+  color: #111827;
+}
+
+.template-card span {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.chart-builder-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.chart-builder-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.chart-description-input {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.chart-description-input:focus {
+  outline: none;
+  border-color: #006EB6;
+  box-shadow: 0 0 0 3px rgba(0, 110, 182, 0.1);
+}
+
+.data-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-add-data {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #006EB6;
+  border-radius: 6px;
+  background: #006EB6;
+  color: white;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: inherit;
+}
+
+.btn-add-data:hover {
+  background: #214491;
+}
+
+.data-table {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.data-table-header {
+  display: grid;
+  grid-template-columns: 1fr 120px 40px;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #f9fafb;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.data-table-row {
+  display: grid;
+  grid-template-columns: 1fr 120px 40px;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-top: 1px solid #e5e7eb;
+  align-items: center;
+}
+
+.data-table-row:hover {
+  background: #f9fafb;
+}
+
+.data-input {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.9375rem;
+  font-family: inherit;
+}
+
+.data-input:focus {
+  outline: none;
+  border-color: #006EB6;
+  box-shadow: 0 0 0 2px rgba(0, 110, 182, 0.1);
+}
+
+.btn-remove-data {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background: #f3f4f6;
+  color: #6b7280;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.btn-remove-data:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.data-hint {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.chart-preview-panel {
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: #fafbfc;
+  margin-top: 1.5rem;
+}
+
+.chart-preview-panel.chart-preview-empty {
+  border-style: dashed;
+  background: #f9fafb;
+}
+
+.chart-preview-panel h4 {
+  margin: 0 0 1.25rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  letter-spacing: 0.01em;
+}
+
+.preview-placeholder {
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9375rem;
+  font-style: italic;
+  background: white;
+  border-radius: 8px;
+  border: 1px dashed #d1d5db;
+}
+
+.chart-preview-container {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  min-height: 450px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 1024px) {
+  .chart-builder-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .chart-builder-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chart-builder-title-group {
+    min-width: auto;
+  }
+
+  .chart-builder-actions {
+    justify-content: flex-end;
+  }
+
+  .data-table-header,
+  .data-table-row {
+    grid-template-columns: 1fr 100px 35px;
+  }
+}
+

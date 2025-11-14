@@ -1,0 +1,116 @@
+.export-menu-container {
+  position: relative;
+  display: inline-block;
+  z-index: 10000;
+}
+
+.export-menu-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.export-menu-button:hover {
+  background-color: #f3f4f6;
+  border-color: #d1d5db;
+  color: #111827;
+}
+
+.export-menu-button svg {
+  flex-shrink: 0;
+}
+
+.export-menu-dropdown {
+  min-width: 220px;
+  max-height: calc(100vh - 20px);
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 0.5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.export-menu-section {
+  margin-bottom: 0.5rem;
+}
+
+.export-menu-section:last-child {
+  margin-bottom: 0;
+}
+
+.export-menu-title {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.export-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9375rem;
+  color: #374151;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-align: left;
+  font-family: inherit;
+}
+
+.export-menu-item:hover {
+  background-color: #f9fafb;
+}
+
+.export-menu-item svg {
+  flex-shrink: 0;
+  color: #6b7280;
+}
+
+.export-menu-item span {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copied-indicator {
+  font-size: 0.875rem;
+  color: #10b981;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.export-menu-divider {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .export-menu-dropdown {
+    right: auto;
+    left: 0;
+  }
+}
+
+
+

@@ -1,0 +1,90 @@
+.cta-box {
+  margin: 2.5rem 0;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid;
+}
+
+.cta-box-primary {
+  background: linear-gradient(135deg, #006EB6 0%, #214491 100%);
+  border-color: #006EB6;
+  color: white;
+}
+
+.cta-box-secondary {
+  background-color: #f0f9ff;
+  border-color: #006EB6;
+  color: #111827;
+}
+
+.cta-box-success {
+  background-color: #d1fae5;
+  border-color: #10b981;
+  color: #065f46;
+}
+
+.cta-box-warning {
+  background-color: #fef3c7;
+  border-color: #f59e0b;
+  color: #92400e;
+}
+
+.cta-box-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem 0;
+}
+
+.cta-box-description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+  opacity: 0.9;
+}
+
+.cta-box-primary .cta-box-description {
+  opacity: 0.95;
+}
+
+.cta-box-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: white;
+  color: #006EB6;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.2s;
+  border: 2px solid white;
+}
+
+.cta-box-primary .cta-box-button {
+  background-color: white;
+  color: #006EB6;
+}
+
+.cta-box-secondary .cta-box-button {
+  background-color: #006EB6;
+  color: white;
+  border-color: #006EB6;
+}
+
+.cta-box-success .cta-box-button {
+  background-color: #10b981;
+  color: white;
+  border-color: #10b981;
+}
+
+.cta-box-warning .cta-box-button {
+  background-color: #f59e0b;
+  color: white;
+  border-color: #f59e0b;
+}
+
+.cta-box-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+

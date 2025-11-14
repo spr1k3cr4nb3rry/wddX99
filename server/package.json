@@ -1,0 +1,38 @@
+{
+  "name": "wddx99-2-server",
+  "version": "1.0.0",
+  "description": "Backend server for BYU-Idaho Education Platform",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "delete-all-topics": "node scripts/delete-all-topics.js",
+    "migrate:content-blocks": "node database/migrations/run_add_content_blocks.js",
+    "migrate:notifications": "node database/migrations/run_create_notifications_table.js",
+    "migrate:all": "node database/migrations/run_all_migrations.js",
+    "populate:topics": "node scripts/populate-topics.js",
+    "populate:votes": "node scripts/populate-votes.js",
+    "populate:users-votes": "node scripts/populate-users-and-votes.js",
+    "populate:ai-topic": "node scripts/populate-ai-topic.js",
+    "migrate:votes": "node scripts/migrate-votes-to-agree-disagree.js",
+    "update:vote-constraint": "node scripts/update-vote-constraint.js",
+    "populate:votes-new": "node scripts/populate-votes-agree-disagree-neutral.js",
+    "test:notifications": "node scripts/test-notifications-table.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "nodemailer": "^6.10.1",
+    "pg": "^8.11.3",
+    "recharts": "^3.3.0"
+  }
+}

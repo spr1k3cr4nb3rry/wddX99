@@ -1,0 +1,127 @@
+.topics-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.topics-main {
+  flex: 1;
+  padding: 2rem 0;
+  background-color: #f9fafb;
+}
+
+.topics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.topics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topics-header h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #111827;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.topics-intro {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.topics-intro-text {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #4b5563;
+  margin: 0;
+  max-width: 900px;
+}
+
+.topics-loading,
+.topics-error {
+  padding: 3rem;
+  text-align: center;
+  color: #6b7280;
+}
+
+.topics-error {
+  color: #dc2626;
+}
+
+.btn-retry {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #006EB6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: inherit;
+}
+
+.btn-retry:hover {
+  background-color: #005a94;
+}
+
+.btn-create-topic {
+  background-color: #006EB6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9375rem;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.btn-create-topic:hover {
+  background-color: #214491;
+  box-shadow: 0 2px 4px rgba(0, 110, 182, 0.2);
+}
+
+@media (max-width: 768px) {
+  .topics-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .topics-header h1 {
+    font-size: 2rem;
+  }
+
+  .topics-container {
+    padding: 0 1rem;
+  }
+
+  .topics-intro {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .topics-intro-text {
+    font-size: 0.875rem;
+  }
+}
+

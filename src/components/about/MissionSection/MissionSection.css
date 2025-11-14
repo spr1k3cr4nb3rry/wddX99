@@ -1,0 +1,105 @@
+.mission-section {
+  padding: 5rem 2rem;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.mission-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mission-content {
+  text-align: left;
+}
+
+.mission-text {
+  max-width: 100%;
+  margin: 0;
+}
+
+.mission-description {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  color: #374151;
+  margin-bottom: 4rem;
+  max-width: 900px;
+  font-weight: 400;
+}
+
+.mission-section-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.mission-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 0;
+}
+
+@media (max-width: 968px) {
+  .mission-points {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+.mission-point {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  transition: none;
+}
+
+.mission-point:hover {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.mission-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #006EB6;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 0 1.25rem 0;
+  border: none;
+}
+
+.mission-point h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.875rem;
+  letter-spacing: -0.01em;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+}
+
+.mission-point p {
+  font-size: 0.9375rem;
+  color: #4b5563;
+  line-height: 1.7;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .mission-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .mission-points {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -1,0 +1,33 @@
+.lazy-image-loading {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.lazy-image-error {
+  opacity: 0.5;
+}
+
+.lazy-image-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #3b82f6;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+

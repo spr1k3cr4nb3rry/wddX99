@@ -1,0 +1,22 @@
+.nav-link {
+  color: white !important;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.nav-link:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+.nav-link.active {
+  font-weight: 600;
+  opacity: 1;
+}
+

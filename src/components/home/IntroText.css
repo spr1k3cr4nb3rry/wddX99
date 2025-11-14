@@ -1,0 +1,28 @@
+.intro-text {
+  padding: 3rem 2rem;
+  background-color: white;
+}
+
+.intro-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-paragraph {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.intro-highlight {
+  font-weight: 700;
+  color: #006EB6;
+  font-size: 1.25rem;
+}
+
+.intro-paragraph:last-child {
+  margin-bottom: 0;
+}
+

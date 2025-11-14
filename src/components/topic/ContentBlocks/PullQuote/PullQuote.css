@@ -1,0 +1,79 @@
+.pull-quote {
+  margin: 2.5rem 0;
+  padding: 2rem;
+  border-left: 4px solid #006EB6;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+.pull-quote-center {
+  text-align: center;
+  border-left: none;
+  border-top: 4px solid #006EB6;
+  border-bottom: 4px solid #006EB6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pull-quote-left {
+  float: left;
+  width: 300px;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+}
+
+.pull-quote-right {
+  float: right;
+  width: 300px;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+.pull-quote-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #111827;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+  quotes: '"' '"' "'" "'";
+}
+
+.pull-quote-text::before {
+  content: open-quote;
+  font-size: 3rem;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+  color: #006EB6;
+  margin-right: 0.25em;
+}
+
+.pull-quote-text::after {
+  content: close-quote;
+  font-size: 3rem;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+  color: #006EB6;
+  margin-left: 0.25em;
+}
+
+.pull-quote-author {
+  display: block;
+  font-size: 1rem;
+  color: #6b7280;
+  font-style: normal;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .pull-quote-left,
+  .pull-quote-right {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
